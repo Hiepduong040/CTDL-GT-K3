@@ -1,0 +1,32 @@
+1. Lưu trữ danh sách sinh viên theo thứ tự nhập vào
+Cấu trúc dữ liệu: Danh sách liên kết (Linked List)
+Lý do:
+
+Danh sách liên kết là cấu trúc dữ liệu phù hợp cho các bài toán cần thêm hoặc xóa phần tử liên tục mà không cần quan tâm đến kích thước cố định của bộ nhớ.
+Khi lưu trữ danh sách sinh viên, chúng ta có thể dễ dàng thêm sinh viên mới vào cuối danh sách mà không cần di chuyển các phần tử khác, vì các phần tử trong danh sách liên kết chỉ cần thay đổi con trỏ.
+2. Tìm kiếm nhanh tên một sản phẩm trong danh sách hàng triệu sản phẩm
+Cấu trúc dữ liệu: Bảng băm (Hash Table)
+Lý do:
+
+Bảng băm cung cấp khả năng tìm kiếm với thời gian trung bình là O(1), giúp việc tìm kiếm sản phẩm nhanh chóng và hiệu quả.
+Mỗi sản phẩm sẽ có một khóa (key) duy nhất (ví dụ: mã sản phẩm hoặc tên sản phẩm), và bảng băm cho phép tra cứu sản phẩm đó một cách trực tiếp mà không cần phải duyệt toàn bộ danh sách.
+Với hàng triệu sản phẩm, bảng băm giúp giảm thiểu thời gian tìm kiếm, rất phù hợp với các ứng dụng yêu cầu tìm kiếm nhanh trong danh sách lớn.
+3. Quản lý danh sách các task công việc cần xử lý theo thứ tự ưu tiên
+Cấu trúc dữ liệu: Heap (Cây nhị phân heap)
+Lý do:
+
+Heap là một cấu trúc cây đặc biệt, thường là Cây nhị phân có tính chất quan trọng: phần tử cha luôn có giá trị lớn hơn hoặc nhỏ hơn các phần tử con (heap tối đa hoặc heap tối thiểu).
+Đối với bài toán quản lý task công việc, chúng ta cần đảm bảo rằng task có độ ưu tiên cao nhất luôn được xử lý trước. Heap giúp thực hiện các thao tác chèn (insert) và xóa (extract) phần tử với độ phức tạp là O(log n), giúp xử lý hiệu quả khi số lượng task lớn.
+4. Lưu trữ dữ liệu hệ thống phân cấp như thư mục máy tính
+Cấu trúc dữ liệu: Cây (Tree), đặc biệt là Cây nhị phân hoặc cây đa nhánh
+Lý do:
+
+Cây là cấu trúc dữ liệu tự nhiên để biểu diễn mối quan hệ phân cấp (cha-con). Mỗi thư mục có thể là một nút trong cây, với các thư mục con là các nút con của nó.
+Việc duyệt qua các thư mục để tìm kiếm một file, thêm thư mục mới, hoặc xóa thư mục có thể được thực hiện rất hiệu quả khi sử dụng cây.
+
+5. Tìm đường đi ngắn nhất giữa 2 điểm trên bản đồ
+Cấu trúc dữ liệu: Đồ thị (Graph)
+Lý do:
+
+Đồ thị là cấu trúc dữ liệu tự nhiên để mô hình hóa các vấn đề tìm đường, trong đó các điểm trên bản đồ được coi là các đỉnh (vertex) và các con đường nối các điểm được coi là cạnh (edge).
+Đồ thị cũng cho phép mô hình hóa các loại bản đồ khác nhau như bản đồ giao thông, bản đồ mạng internet, hay bản đồ kết nối các thiết bị trong mạng.
